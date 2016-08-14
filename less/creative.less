@@ -82,7 +82,8 @@ aside {
         color: @theme-primary;
         .sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        letter-spacing: .06em;
         &:hover,
         &:focus {
             color: darken(@theme-primary, 10%);
@@ -165,13 +166,13 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/students-dimmed.jpg');
     text-align: center;
     color: white;
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 125px 15px;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -230,6 +231,7 @@ header {
     margin: 50px auto 0;
     @media (min-width: 992px) {
         margin: 20px auto 0;
+        min-height: 200px;
     }
     p {
         margin-bottom: 0;
@@ -295,10 +297,68 @@ header {
     }
 }
 
-.call-to-action {
-    h2 {
-        margin: 0 auto 20px;
+#vision {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    .background-cover;
+    background-position: center;
+    background-image: url('../img/portfolio/fullsize/2-dimmed.jpg');
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    @media (min-width: 768px) {
+        min-height: 130%;
     }
+    .vision-content {
+        @media(min-width: 992px) {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+        }
+        .vision-mission {
+            margin: 55px 15px;
+            h2 span {
+                display: inline-block;
+                padding: 10px;
+                background-color: @theme-primary;
+                border-radius: 5px;
+            }
+            p {
+                line-height: 2.3em;
+                padding: 20px;
+            }
+        }
+        .vision-other {
+            background-color: rgba(122, 127, 143, 0.26);
+            border: 0;
+            margin: 15px 20px 75px;
+            p {
+                padding: 30px 15px 0;
+            }
+        }
+    }
+}
+
+.bg-dark {
+    background-color: @theme-primary;
+}
+.call-to-action {
+    padding: 30px 0;
+    color: white;
+    h2 {
+        line-height: 1.7em;
+        margin: 0 auto 50px;
+    }
+}
+
+form input {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 // Bootstrap Overrides
