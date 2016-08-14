@@ -1,3 +1,6 @@
 node_modules
 bower_components
 working
+firebase.json
+database.rules.json
+.firebaserc
