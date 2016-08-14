@@ -73,11 +73,23 @@ aside {
   color: #47578F;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
+  white-space: nowrap;
   letter-spacing: .06em;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #36426d;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-header .navbar-brand {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-header .navbar-brand {
+    font-size: inherit;
+    white-space: normal;
+  }
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
@@ -99,6 +111,7 @@ aside {
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
   color: #47578F !important;
+  text-shadow: 0px 0px 8px #fff;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -180,6 +193,7 @@ header .header-content .header-content-inner p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
+  text-shadow: 0 0 20px #000;
 }
 @media (min-width: 768px) {
   header {
@@ -305,6 +319,9 @@ header .header-content .header-content-inner p {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+}
+#vision .vision-content p {
+  text-shadow: 0 0 20px #000;
 }
 #vision .vision-content .vision-mission {
   margin: 55px 15px;

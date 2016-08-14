@@ -82,11 +82,19 @@ aside {
         color: @theme-primary;
         .sans-serif-font;
         font-weight: 700;
+        white-space: nowrap;
         // text-transform: uppercase;
         letter-spacing: .06em;
         &:hover,
         &:focus {
             color: darken(@theme-primary, 10%);
+        }
+        @media (max-width: 767px) {
+            font-size: 13px;
+        }
+        @media (min-width: 768px) {
+            font-size: inherit;
+            white-space: normal;
         }
     }
     .navbar-header .navbar-toggle {
@@ -111,6 +119,7 @@ aside {
                 > a,
                 > a:focus {
                     color: @theme-primary !important;
+                    text-shadow: 0px 0px 8px #fff;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -190,6 +199,7 @@ header {
                 color: fade(white, 70%);
                 font-size: 16px;
                 margin-bottom: 50px;
+                text-shadow: 0 0 20px #000;
             }
         }
     }
@@ -318,6 +328,9 @@ header {
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
 
+        }
+        p {
+            text-shadow: 0 0 20px #000;
         }
         .vision-mission {
             margin: 55px 15px;
