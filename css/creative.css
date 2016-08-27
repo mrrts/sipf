@@ -64,6 +64,7 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
+  border: 0;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -111,8 +112,7 @@ aside {
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
   color: #47578F !important;
-  text-shadow: 0px 0px 8px #fff;
-  background-color: transparent;
+  background-color: #fff;
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
@@ -168,7 +168,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/students-dimmed.jpg');
+  background-image: url('../img/diverse_collab_dimmed_lighter.jpg');
   text-align: center;
   color: white;
 }
@@ -301,7 +301,7 @@ header .header-content .header-content-inner p {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/portfolio/fullsize/2-dimmed.jpg');
+  background-image: url('../img/asian_pic_dimmed.jpg');
   text-align: center;
   color: white;
   padding: 30px 0;
@@ -490,6 +490,14 @@ img::selection {
 img::-moz-selection {
   color: white;
   background: transparent;
+}
+.img-thumbnail {
+  padding: 2px;
+}
+.hands-collab-pic {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 body {
   webkit-tap-highlight-color: #222222;

@@ -76,6 +76,7 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: fade(@gray-darker, 5%);
+    border: 0;
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
@@ -119,8 +120,7 @@ aside {
                 > a,
                 > a:focus {
                     color: @theme-primary !important;
-                    text-shadow: 0px 0px 8px #fff;
-                    background-color: transparent;
+                    background-color: #fff;
                     &:hover {
                         background-color: transparent;
                     }
@@ -175,7 +175,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/students-dimmed.jpg');
+    background-image: url('../img/diverse_collab_dimmed_lighter.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -313,7 +313,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/portfolio/fullsize/2-dimmed.jpg');
+    background-image: url('../img/asian_pic_dimmed.jpg');
     text-align: center;
     color: white;
     padding: 30px 0;
@@ -427,6 +427,16 @@ img::selection {
 img::-moz-selection {
     color: white;
     background: transparent;
+}
+
+.img-thumbnail {
+    padding: 2px;
+}
+
+.hands-collab-pic {
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 body {
